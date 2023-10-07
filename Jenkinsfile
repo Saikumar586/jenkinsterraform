@@ -4,7 +4,7 @@ pipeline{
 
     stages{
 
-        stage('init'){
+        stage('Init'){
             steps{
 
                 ssh '''
@@ -13,7 +13,8 @@ pipeline{
 
                 '''
             }
-         stage('plan'){
+        }
+         stage('Plan'){
             steps{
 
                 ssh '''
@@ -33,6 +34,6 @@ pipeline{
         //         '''
             }
         }
-    }
+    
 
 
