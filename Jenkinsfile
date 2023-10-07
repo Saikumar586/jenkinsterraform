@@ -18,7 +18,7 @@ options{
 
                 ls -lnt
                 pwd
-                dir('H:\devopstools\repos\terraformjenkins')
+                dir('terraformjenkins')
                 terraform init
                 echo "init stage"
 
@@ -31,7 +31,7 @@ options{
                 sh'''
                  ls -lnt
                 pwd
-                dir('H:\devopstools\repos\terraformjenkins')
+                dir('terraformjenkins')
                 terraform plan
                 echo "plan stage"
 
