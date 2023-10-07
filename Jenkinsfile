@@ -11,7 +11,7 @@ pipeline{
 
                 ls -lnt
                 pwd
-                cd H:\devopstools\repos\terraformjenkins
+                dir(terraformjenkins)
                 terraform init
                 echo "init stage"
 
@@ -24,7 +24,7 @@ pipeline{
                 sh'''
                  ls -lnt
                 pwd
-                cd H:\devopstools\repos\terraformjenkins
+                dir(terraformjenkins)                
                 terraform plan
                 echo "plan stage"
 
