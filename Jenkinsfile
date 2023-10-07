@@ -7,20 +7,29 @@ pipeline{
         stage('Init'){
             steps{
 
-                
+                ssh'''
+
+                ls -lnt
+                pwd
+                cd /terraformjenkins
 
                 echo "init stage"
 
-            
+                '''
             }
         }
          stage('Plan'){
             steps{
 
-                
-                     echo "plan stage"
+                ssh '''
+                 ls -lnt
+                pwd
+                cd /terraformjenkins
 
-                
+
+                echo "plan stage"
+
+                '''
             }
          }
         //  stage('deploye'){
