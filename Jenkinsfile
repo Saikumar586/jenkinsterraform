@@ -7,7 +7,7 @@ pipeline{
         stage('Init'){
             steps{
 
-                ssh'''
+                sh'''
 
                 ls -lnt
                 pwd
@@ -21,7 +21,7 @@ pipeline{
          stage('Plan'){
             steps{
 
-                ssh'''
+                sh'''
                  ls -lnt
                 pwd
                 cd /terraformjenkins
