@@ -1,6 +1,9 @@
 pipeline{
 
     agent any
+option{
+    ansicolor(xterm)
+}
 
     stages{
          stage('Git Checkout'){
@@ -45,6 +48,8 @@ pipeline{
         //         '''
             }
         }
+
+}
     
 
 
