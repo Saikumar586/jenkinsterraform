@@ -12,7 +12,7 @@ pipeline{
                 ls -lnt
                 pwd
                 cd /terraformjenkins
-
+                terraform init
                 echo "init stage"
 
                 '''
@@ -21,12 +21,11 @@ pipeline{
          stage('Plan'){
             steps{
 
-                ssh '''
+                ssh'''
                  ls -lnt
                 pwd
                 cd /terraformjenkins
-
-
+                terraform plan
                 echo "plan stage"
 
                 '''
