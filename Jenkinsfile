@@ -9,7 +9,7 @@ pipeline{
 
                 
 
-                sh echo "init stage"
+                echo "init stage"
 
             
             }
@@ -18,8 +18,7 @@ pipeline{
             steps{
 
                 
-
-                 sh echo "plan stage"
+                     echo "plan stage"
 
                 
             }
