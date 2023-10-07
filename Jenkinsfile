@@ -3,6 +3,10 @@ pipeline{
     agent any
 
     stages{
+         stage('Git Checkout'){
+            steps{
+                git branch: 'master', url: 'https://github.com/Saikumar586/jenkinsterraform.git'
+        }
 
         stage('Init'){
             steps{
@@ -11,7 +15,7 @@ pipeline{
 
                 ls -lnt
                 pwd
-                cd terraformjenkins
+                dir('H:\devopstools\repos\terraformjenkins')
                 terraform init
                 echo "init stage"
 
@@ -24,7 +28,7 @@ pipeline{
                 sh'''
                  ls -lnt
                 pwd
-                cd terraformjenkins
+                dir('H:\devopstools\repos\terraformjenkins')
                 terraform plan
                 echo "plan stage"
 
