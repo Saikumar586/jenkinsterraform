@@ -1,8 +1,8 @@
 pipeline{
 
     agent any
-option{
-    ansicolor(xterm)
+options{
+    ansiColor(xterm)
 }
 
     stages{
