@@ -7,21 +7,21 @@ pipeline{
         stage('Init'){
             steps{
 
-                ssh '''
+                
 
-                echo "init stage"
+                sh echo "init stage"
 
-                '''
+            
             }
         }
          stage('Plan'){
             steps{
 
-                ssh '''
+                
 
-                echo "plan stage"
+                 sh echo "plan stage"
 
-                '''
+                
             }
          }
         //  stage('deploye'){
